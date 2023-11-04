@@ -1,5 +1,5 @@
 document.querySelector('.categories').innerHTML = "Loading cheats...";
-await fetch("https://raw.githubusercontent.com/Minesraft2/Blooket-Cheats/main/unobfuscated/Bookmarklets.html").then(async x => document.querySelector("#unobfuscated").contentDocument.write(await x.text().then(x => x.slice(0, x.indexOf("<style")))));
+await fetch("https://raw.githubusercontent.com/05konz/Blooket-Cheats/main/unobfuscated/Bookmarklets.html").then(async x => document.querySelector("#unobfuscated").contentDocument.write(await x.text().then(x => x.slice(0, x.indexOf("<style")))));
 const unobfuscated = parseCheats(document.querySelector("#unobfuscated"));
 window.a = unobfuscated
 
