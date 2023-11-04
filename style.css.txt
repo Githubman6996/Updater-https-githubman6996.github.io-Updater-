@@ -1,0 +1,94 @@
+* {
+    font-family: Nunito;
+}
+
+.background {
+    display: block;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(162.5deg, rgba(0,183,255,1) 0%, rgba(128,0,255,1) 100%);
+    visibility: visible;
+    z-index: -1;
+}
+
+.background-image {
+    position: absolute;
+    background-image: url(https://ac.blooket.com/play/65a43218fd1cabe52bdf1cda34613e9e.png);
+    width: 11000px; /* 550*200 */
+    height: 11320px; /* 566*200 */
+    opacity: 0.175;
+    z-index: -1;
+    animation: 20s blooks linear infinite;
+}
+
+.main {
+    text-align: center;
+    padding-inline: 50px;
+}
+
+.categories {
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px
+}
+
+.category {
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: scale(0.95)
+}
+
+.label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-inline: auto;
+    background-color: #ff7b24;
+    min-width: 120px;
+    line-height: 22.5px;
+    border-radius: 6px;
+    color: white;
+}
+
+.cheatlabel {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-inline: auto;
+    background-color: #b624ff;
+    min-width: 120px;
+    line-height: 33px;
+    font-size: 1.125rem;
+    border-radius: 6px;
+    color: white;
+    font-family: Nunito;
+}
+
+@keyframes blooks {
+    /*
+        531px, 142px
+    */
+    0% {
+        transform: translate(-2124px, -568px) rotate(15deg);
+    }
+    100% {
+        transform: translate(-1593px, -426px) rotate(15deg);
+    }
+}
